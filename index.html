@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav-bar" class="nav-bar">
+        <div class="on-mobile">
+            <div class="nav-logo"><span>giard</span>design</div>
+            <span onclick="mobileNavCloseClicked()" id="nav-remove" class="hide"><i class="bi bi-x-circle"></i></span>
+        </div>
+        <div class="nav-options">
+            <ul>
+                <li><a href="#link1">Oferta</a></li>
+                <li><a href="#link2">O firmie</a></li>
+                <li><a href="#link3">Realizacje</a></li>
+                <li><a href="#link4">Kontakt</a></li>
+                <li class="search-container">
+                    <i onclick="searchButtonClcked()" class="bi bi-search"></i>
+                    <input id="search-box" class="hide" type="text">
+                </li>
+            </ul>
+        </div>
+        <span id="menu-button" onclick="menuButtonClicked()" class="material-symbols-outlined menu-icon">menu</span>
+    </div>
+
+
+    <div class="equal-block">
+        <div class="part1">
+            <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
+            <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.</p>
+            <button class="colored-button">Skontaktuj się z nami</button>
+            <button>Zobacz nasze realizacje  <span class="material-symbols-outlined">arrow_downward</span></button>
+        </div>
+        <div class="part2"><img src="./img1.png" alt=""></div>
+    </div>
+
+
+    <div id="link1" class="card-block">
+        <div class="info">
+            <div class="head">Działamy kompleksowo</div>
+            <div class="texts">
+                Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+                nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie
+                projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
+                posłużymy radą i wieloletnim doświadczeniem.
+            </div>
+        </div>
+    
+        <div id='cards' class='cards'>
+            <div id='card-1' class='card-1'>
+                <div class="icon">
+                    <img id='icon1'
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKASURBVHgB3Zg7aBRRFIb/oFhY6GpERZFsZWOhRQoFwS0sREHw0YgpLOxVsPIBwxZWGksRkQU7y6AoFvEBFlY+EEVBCQhiJcmmCYG8zmHmkpObuTPnbObuLvnhg2zuY/7975yzuwPodIs4jzh6QCwSLXSoZrbBLOKY/JHt/x4dyJlzsMnTqE4Nb/+GZfGot1hSRZJDxIS3L7+uaxY3C8xVkeSZHHPS5AjWYI6ZIk7ArtfEX8X+zH/iZSfm5ohhsaYGvWaU5hz/rOb4XcnkLhCTxHHodI14QvwpuQ7v2SIuWczxsTbExS4iTZPH2gaTrCHiUeA6j+GdisYcF8UxsWZEmHNME0dg03Nvj1bepAS2gjiVY84xD1uSe7296qGJCcLJDXtztxOfEX5DfNyWJN9l616UTbyB1ckdFeMHiAFh8kuBST7uw9DpOvGGuKqZnCC/lXBT5jTvif8NlphsG0yadBsr7zlnzl14VIyVHTcnabknzTrnmXM0xZxBlN+TUUweCphzPBRzNUlaW5BKd1DcgjhJbeFYW1BlJi1JWltQZSbvY2WSPSmcMpN90YLuotik34J+oZpmblKC8sJx0rSgniS57lrQR0SSpXBCSf4k9iGi1tKC+O8t2dhm4iQiKYG+ul3hfCe2CXPjxG9ElLUF7Rbmnop5BxFRCfQtyJl75s25icgqSvIrsavAHNNCF5RXOJ+w/HMyZO4bsRNdkjTJye0RY+M55iagfHBUpfi4Obkd2WtNcpuQ/uzomuSxhpKT5saIBWI/uqzLKE9uTIxdQQ9UR/rA6RXSow+ZY96ij8RPvPLaUm0D+kN8b35AmuRWLH8+twfQf9qI9EvDWaK2BDapBaTh2R/lAAAAAElFTkSuQmCC' />
+                    </img>
+                </div>
+                <div class="text-part">
+                    <h2 id='headline' class='headline'>Projekty</h2>
+                    <p id='text1' class='text'>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
+                        istniejącej przestrzeni.</p>
+                </div>
+                <button id='button1' class='button'>
+                    <div id='cta' class='cta'>
+                        Dowiedz się więcej
+    
+                    </div>
+                    <img id='vector' class='vector'
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVHgB7cwxDoJAEIXhN2ALrcpaSA+J4gU4h2viUVxv4A3svIc3IOEEJibaU8tIQssOu9T8xUwz84UQSk7FJcrWZVN/nrabUALibJkS4RblCWyICDT1t4rz1UtCRMAFGQXGECdAQpwBG0JKF3d4x2U3tsxkAkyJ+xWgJfim9OGs9J43x52Bb/PzcAsJIPqlaHF9Pypju/kDkcBavmfbCEIAAAAASUVORK5CYII=' />
+                    </img>
+                </button>
+            </div>
+            <div id='card-2' class='card-2'>
+                <div class="icon">
+                    <img id='icon2'
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAdCAYAAAAD8oRRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALoSURBVHgBzZhbiE1RHMa/YWQwGImU414auWQkl5mIF2JeBokXlGbKA0V5US7hSYnwYigTHsaLPI0XD0cpqckk86JcDiGUW+738X32ObXnzN5n1n+dfcZ89WvmtNf+/mvttdZ//fcuQ3KaTpaSaWRq9ncVqSCfyEvygDwmd0k7eYZ+oFqyn2RIlwe3yDYyBf9BDSRNfsKv8/m8J61kFvpAdQiWQVeJ+E3Ok/EogcaQk+SPsVO/yDvYZ+wNaUKCWoRgM7p2IE0aSYqUZz30dw7ZTToNXm1kMoqUNt03x4BPyXIHz8FkF/ns6Jshc+GpfXB/Ynq6EyI8lmWpiLimGf7o6K8luRZGHYH7AJT7UxEelaE2G2PiaOa+O8bR/loPRx2H+wDEghifxaE2zQXiHTLE0kA2oxcdgG0ArQW8rqD7ckjFtKvKXneNqSW4JC5oE2wDECtjvPZEtL1OBsS0P2GM+xpBadNN1QhqG4uRskt5ns9YcqrAPaqZanuOARuMscUdMiRnMIzc9zDpDHViE+kgHwz3toTun+0RX5zJGTR6GrSHOmFNBuJF6P5qzz6IeVqjl8g92DUy9H+aXCU/3G79V71eCP0eAT/p4XXkftTAliFye2JQnulQcgzBYOJmb0ZEZ+qNsYUefGW+0ToPo3pEayt6FovXyPCY9qeNcTMoUFPtNJq1IV7hc+JJgaDKcK8MMXXg1aAXWU5Q1f9xB09dqF1LgXhHjfFWwFHNBuMMGRXhof2RW1JxtdNCQxzNwBYYZSkCbyN6ueh1U2V0VcQ1zZRrMtFBvAae2k6+OAbSjDQ4eKos3wv3g/E5mY8iNZM8dAwobiIYvD7dDMx6aGmp3DiIYJO7el1G9FL1kg62s4bgYb563KNstQMlktZ32qNTrugF6SIZjT7QagRlRlKd1/44hwTWvo+UfQ6TR7B3XCkzjeCjwTgUoTIkp4lkFYLaaBKCtJpLreqw0qReZvRVRCn5BnmLBPQXvlHFzi0XDI4AAAAASUVORK5CYII=' />
+                    </img>
+                </div>
+                <div class="text-part">
+                    <h2 id='headline2' class='headline2'>Wizualizacje</h2>
+                    <p id='text2' class='text2'>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+                        animowanego w technologii 3D.</p>
+                </div>
+                <button id='button2' class='button'>
+                    <div id='cta2' class='cta2'>
+                        Dowiedz się więcej</div>
+                    <img id='vector2' class='vector'
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVHgB7cwxDoJAEIXhN2ALrcpaSA+J4gU4h2viUVxv4A3svIc3IOEEJibaU8tIQssOu9T8xUwz84UQSk7FJcrWZVN/nrabUALibJkS4RblCWyICDT1t4rz1UtCRMAFGQXGECdAQpwBG0JKF3d4x2U3tsxkAkyJ+xWgJfim9OGs9J43x52Bb/PzcAsJIPqlaHF9Pypju/kDkcBavmfbCEIAAAAASUVORK5CYII=' />
+                    </img>
+                </button>
+            </div>
+            <div id='card-3' class='card-3'>
+                <div class="icon">
+                    <img id='icon3'
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK9SURBVHgB7ZhbqExRGMf/OK4plEuR7DxJEXlwbWxPLilK8TrnSZGSw5PU8KCkSF54OuOWUkop8qA5pCiX8KijeXAeKCdy64jO+H+tPc2ay9577bXXzOxz8qtfrZnWWvPtb8/69lobGKd8pN/oZYwB5tJK4GOMAbajFvBvOh1dZKJBn71aewrdBjfkaX+gMzw6glqGxWdwQ1Gb05i4DF+jUxu+W0uPI4NcQH1mGz2AjODRh4gOtuopOhtdoIfm6Dn6BWbBVi3Tg3QZ0rGIFgLXR3WUh8JowiDD/ENvwA5fm6cQ1kkyuwDukPkWwo4NWjsX1bFEnyN9dn/RF/Q8kiPVqtww38a4QZLp3hYD45QL3kEnwZ7TLeZ9RaeZDJbbWoBZRnuRnrMRv/GEzjed6ASig10De+RuSmV5CrMqdJSuNJn4Zsgkh2DPA9ivk5G4yeeguS7fRjoGYB9wJW6hyBXJk2yT9t1h+h72zKQz6Dyo3Z8JEuwbetek82bUrvAr3CGLqY/+RXRWL9GlSIB+4rhv0H8VVKkrBe04ltPPaB1sHyyR8vKanjTo62s/6MOMXWgO9gw6hGS1HOgnGCd3pBrsEF2MjLMftYCvhHUyOdN1irda+11YpwnIDpK8ajUYhqr/4w9ZMP2BnuGYPVDbSnEJOoyP5CXpojZmK9qMi0W3RWvnDMfkkTwxTsijvtjLQjE5IunjfCQgzSnBo1fpLO07OSGspteDYKL4RB9B7d5c7lFaIrd+COEbFnmd5aHL7IR626M/QqP8CfXE2gfD04JrKikswRE9yB4+1N9J/td3kII81KusMswzO0CP0N0wp4ja4dMZcuIdRnigsnlZBzuKaEPAwgr6A83BDkKd12yRM6SHNlWZY6gPdhQZKGdRTKYfYLDxdkXavYS8Xr2nfb6FNuOirL2k34P2IP5Tzz+98mX7XYegMgAAAABJRU5ErkJggg==' />
+                    </img>
+                </div>
+                <div class="text-part">
+                    <h2 id='headline3' class='headline3'>
+                        Realizacje</h2>
+                    <p id='text3' class='text3'>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+                        zaawansowanych technologii.</p>
+                </div>
+                <button id='button3' class='button'>
+                    <div id='cta3' class='cta3'>
+                        Zobacz nasze realizacje</div>
+                    <img id='vector3' class='vector'
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVHgB7cwxDoJAEIXhN2ALrcpaSA+J4gU4h2viUVxv4A3svIc3IOEEJibaU8tIQssOu9T8xUwz84UQSk7FJcrWZVN/nrabUALibJkS4RblCWyICDT1t4rz1UtCRMAFGQXGECdAQpwBG0JKF3d4x2U3tsxkAkyJ+xWgJfim9OGs9J43x52Bb/PzcAsJIPqlaHF9Pypju/kDkcBavmfbCEIAAAAASUVORK5CYII=' />
+                    </img>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="link2" class="equal-block-again equal-block">
+        <div class="part1">
+            <h1>Tworzymy z pasją</h1>
+            <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+            <button>Zobacz nasze realizacje  <span class="material-symbols-outlined">arrow_forward</span></button>
+        </div>
+        <div class="part2"><img src="./img2.png" alt=""></div>
+    </div>
+
+
+    <div id="link3" class="explore-part">
+        <div class="upper-side">
+            <p>Realizacje</p>
+            <h2>Nasze <i>projekty</i></h2>
+        </div>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+            </div>
+            <div id="extra1" class="grid-item hide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+            </div>
+            <div id="extra2" class="grid-item hide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+            </div>
+            <div id="extra3" class="grid-item hide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+            </div>
+        </div>
+        <div id="blur-div" class="blur-part">
+            <div class="blur1"></div>
+            <div class="blur2"></div>
+            <div class="blur3"></div>
+            <div class="explore-buton">
+                <button onclick="exploreClicked()">Rozwiń </button>
+            </div>
+        </div>
+        <div id="show-less" class="show-less-button hide">
+            <button onclick="showLessClicked()">Show Less</button>
+        </div>
+    </div>
+
+
+    <div id="link4" class="instagram-block">
+        <div class="inner-container">
+            <h1>Zostańmy w kontakcie! <br> Znajdziesz nas na <span>Instagramie.</span> </h1>
+            <div>
+                <p>Śledź nasze najnowsze realizacje!</p>
+                <button>Instagram</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <div class="first-part">
+            <div class="line1">
+                <h2><span>giard</span>design</h2>
+                <div>
+                    <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <button>Skontaktuj się z nami</button>
+                </div>
+            </div>
+            <div class="line2">
+                <div>
+                    <ul>
+                        <li>Kontakt</li>
+                        <li>Instagraam</li>
+                        <li>Facebook</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+                <div>
+                    <span>000-000-000</span>
+                    <span id="mail-id">giarddesign@kontakt.pl</span>
+                </div>
+            </div>
+        </div>
+        <div class="second-part">
+            <p>Prawa zastrzeżone © 2022</p>
+            <p>made by Siddharth</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+
+        // init Masonry
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+
+        imagesLoaded(grid).on('progress', function () {
+            // layout Masonry after each image loads
+            msnry.layout();
+        });
+
+        function exploreClicked() {
+            document.getElementById("extra1").classList.remove("hide");
+            document.getElementById("extra2").classList.remove("hide");
+            document.getElementById("extra3").classList.remove("hide");
+            document.getElementById("show-less").classList.remove("hide");
+            document.getElementById("blur-div").classList.add("hide");
+            msnry.layout();
+        }
+
+        function showLessClicked() {
+            document.getElementById("extra1").classList.add("hide");
+            document.getElementById("extra2").classList.add("hide");
+            document.getElementById("extra3").classList.add("hide");
+            document.getElementById("show-less").classList.add("hide");
+            document.getElementById("blur-div").classList.remove("hide");
+            msnry.layout();
+        }
+
+        function menuButtonClicked(){
+            document.getElementById("nav-bar").classList.add("show-mobile-nav");
+            document.getElementById("menu-button").classList.add("hide");
+            document.getElementById("nav-remove").classList.remove("hide");
+            document.getElementById("search-box").classList.remove("hide");
+        }
+
+        function mobileNavCloseClicked(){
+            document.getElementById("nav-bar").classList.remove("show-mobile-nav");
+            document.getElementById("menu-button").classList.remove("hide");
+            document.getElementById("nav-remove").classList.add("hide");
+            document.getElementById("search-box").classList.add("hide");
+        }
+
+        var searchClicked = false;
+
+        function searchButtonClcked(){
+            if(window.innerWidth > 480){
+                if(searchClicked){
+                    document.getElementById("search-box").classList.add("hide");
+                }else{
+                    document.getElementById("search-box").classList.remove("hide");
+                }
+                searchClicked = !searchClicked;
+            }
+        }
+
+    </script>
+</body>
+</html>

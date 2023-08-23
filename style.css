@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+.nav-bar{
+    z-index: 2;
+    position: fixed;
+    width: 93%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    align-items: center;
+
+    .nav-logo span{
+        font-weight: bold;
+    }
+
+    .nav-options ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .nav-options a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .search-container{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    
+        & i{
+            font-size: large;
+        }
+    
+        & input{
+            border: 2px solid black;
+            height: 1.5rem;
+            border-radius: 1rem;
+            padding: 0 1rem;
+        }
+    }
+
+    .menu-icon{
+        display: none;
+    }
+}
+
+.equal-block{
+    display: flex;
+
+    &>div{
+        height: 100vh;
+    }
+
+    .part1 {
+        width: 50%;
+        background-color: #DCC1AB;
+        box-sizing: border-box;
+        padding: 5rem;
+        
+        & h1{
+            font-family: Montserrat;
+            font-size: 3.2rem;
+            font-weight: 500;
+        }
+
+        & p{
+            padding-left: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            padding: 0;
+        }
+
+        & button{
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            border-radius: 2rem;
+            border: 2px solid #1B5B31;
+            background-color: transparent;
+            font-size: 1rem;
+            color: #1B5B31;
+
+            
+            & span{
+                font-size: 1.3rem;
+            }
+        }
+
+        .colored-button{
+            color: white;
+            background-color: #1B5B31;
+            margin-right: 1rem;
+        }
+    }
+    
+    .part2 {
+        width: 50%;
+        background-color: blue;
+    
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.card-block{
+    background-color: #F5F0EC;
+    
+    .info {
+        padding: 7rem 10rem;
+    
+        .head {
+            font-size: 2.8rem;
+            font-family: Montserrat;
+        }
+    
+        .texts {
+            padding-top: 3rem;
+            font-family: Inter;
+            width: 75%;
+            line-height: 150%;
+            letter-spacing: -0.16px;
+        }
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 8rem;
+    
+        &>div {
+            padding: 1.5rem;
+            background-color: rgb(255, 255, 255);
+            width: 22%;
+            border-radius: 2rem;
+        }
+    
+        .icon {
+            padding-top: 1.3rem;
+            height: 3rem;
+        }
+    
+        .text-part h2 {
+            font-size: 1.8rem;
+            font-family: Montserrat;
+            font-weight: 400;
+            letter-spacing: -1.4px;
+        }
+    
+        .text-part p {
+            font-size: 13px;
+            font-family: Inter;
+            margin: 0;
+            line-height: 150%;
+        }
+    
+        .button {
+            display: flex;
+            text-align: center;
+            border: none;
+            background-color: white;
+            border-bottom: 2px solid var(--green, #1B5B31);
+            color: #1B5B31;
+            font-size: 1rem;
+            padding: 0;
+            padding-bottom: 0.2rem;
+            margin-top: 3rem;
+            font-family: Inter;
+    
+            .vector {
+                padding-left: 1rem;
+            }
+    
+            &#button1:hover {
+                background-color: #f39696;
+            }
+    
+            &#button3:hover {
+                background-color: #a6cbe4;
+            }
+    
+            &#button2:hover {
+                background-color: #88ecc3;
+            }
+        }
+    
+        .card-1:hover {
+            transition: all .3s;
+            box-shadow: 12px 12px 2px -1px #f39696;
+        }
+    
+        .card-2:hover {
+            transition: all .3s;
+            box-shadow: 12px 12px 2px -1px #a6cbe4;
+        }
+    
+        .card-3:hover {
+            transition: all .3s;
+            box-shadow: 12px 12px 2px -1px #258fd6;
+        }
+    }
+}
+
+.equal-block-again{
+    flex-direction: row-reverse;
+    color: white;
+
+    & div{
+        background-color: #1B5B31 !important;
+    }
+
+    & button{
+        margin-top: 3rem;
+        color: white !important;
+        border-color: white !important;
+    }
+}
+
+.explore-part {
+    position: relative;
+    padding: 2rem 0;
+    background: #DCC1AB;
+
+    & *{
+        box-sizing: border-box;
+    }
+
+    .upper-side {
+        padding: 4rem 8rem;
+    
+        & p {
+            color: green;
+            font-family: 'Inter', sans-serif;
+            font-size: small;
+        }
+        
+        & h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+    }
+
+    .grid {
+        background: #DCC1AB;
+    
+        /* clear fix */
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    
+        /* ---- .grid-item ---- */
+        .grid-sizer, .grid-item {
+            width: 33.333%;
+        }
+        
+        .grid-item {
+            padding: 1rem;
+            float: left;
+        
+            & img {
+                display: block;
+                max-width: 100%;
+            }
+        }
+    }
+    
+    .blur-part {
+        position: absolute;
+        height: 30rem;
+        width: 100%;
+        bottom: 0px;
+    
+        .blur1 {
+            background-color: #dcc1abc1;
+            filter: blur(30px);
+            height: 28rem;
+            width: 100%;
+        }
+    
+        .blur2 {
+            position: absolute;
+            background-color: #dcc1abc1;
+            filter: blur(30px);
+            height: 15rem;
+            width: 100%;
+            bottom: 0px;
+        }
+    
+        .blur3 {
+            position: absolute;
+            background-color: #dcc1abc1;
+            filter: blur(30px);
+            height: 10rem;
+            width: 100%;
+            bottom: 0px;
+        }
+    
+        .explore-buton {
+            display: flex;
+            justify-content: center;
+    
+            & button {
+                position: absolute;
+                padding: 0.8rem 1.5rem;
+                border: 1px solid black;
+                border-radius: 2rem;
+                bottom: 5rem;
+                background-color: transparent;
+                left: auto;
+            }
+        }
+    }
+ 
+    .show-less-button {
+        width: 100%;
+        text-align: center;
+    
+        & button {
+            padding: 0.8rem 1.5rem;
+            border: 1px solid black;
+            border-radius: 2rem;
+            bottom: 5rem;
+            background-color: transparent;
+            left: auto;
+        }
+    }
+}
+
+.instagram-block{
+    padding: 4rem 11rem;
+    
+    .inner-container{
+        display: flex;
+        gap: 1rem;
+        background-color: #1B5B31;
+        padding: 6rem 6rem 4rem;
+        color: white;
+
+        & h1{
+            padding-top: 1.5rem;
+            font-family: Montserrat;
+            font-weight: 400;
+            width: 100%;
+        }
+
+        & span{
+            font-weight: bold;
+        }
+
+        & button {
+            padding: 0.8rem 1.5rem;
+            border: 1px solid black;
+            border-radius: 2rem;
+            bottom: 5rem;
+            background-color: white;
+            left: auto;
+        }
+    }
+}
+
+.footer{
+    padding: 4rem 11rem;
+    background-color: #111111;
+    color: white;
+
+    .line1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid white;
+
+        & *{
+            margin: 0;
+        }
+
+        & div{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        & h2{
+            font-weight: 400;
+            font-size: 1rem;
+            font-family: Montserrat;
+        }
+
+        & span{
+            font-weight: bold;
+        }
+
+        & button{
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            border: none;
+            color: white;
+            background-color: #1B5B31;
+        }
+    }
+
+    .line2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        padding-top: 3rem;
+
+        & ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 3rem;
+        }
+
+        #mail-id{
+            margin-left: 2rem;
+        }
+    }
+
+    .second-part{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        padding-top: 5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .nav-bar{
+        width: 76%;
+        .nav-options{
+            display: none;
+        }
+
+        .menu-icon{
+            display: block;
+        }
+    }
+    .equal-block {
+        flex-direction: column-reverse;
+        
+        .part1, .part2{
+            width: 100%;
+            height: 50vh;
+        }
+        
+        .part1{
+            padding: 3rem;
+            height: auto;
+
+            & h1{
+                font-size: 2rem;
+            }
+            
+            & button{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    
+    .card-block{
+        .info {
+            padding: 3rem;
+        
+            .texts {
+                width: 100%;
+            }
+        }
+        
+        .cards {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1.5rem;
+            padding-bottom: 5rem;
+        
+            &>div {
+                width: 70%;
+            }
+        }
+    }
+
+    .explore-part{
+        .upper-side{
+            padding: 2rem;
+        }
+
+        & h2{
+            font-size: 2rem !important;
+        }
+
+        .blur-part{
+            .blur1{
+                height: 0;
+            }
+        }
+    }
+
+    .instagram-block {
+        padding: 3rem;
+        
+        .inner-container{
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            & h1{
+                font-size: 1.5rem;
+            }
+
+            & div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .footer{
+        padding: 2rem;
+
+        .line1{
+            flex-direction: column;
+
+            & div{
+                flex-direction: column;
+            }
+        }
+
+        .line2{
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+
+            & ul{
+                gap: 1rem;
+            }
+        }
+
+        .second-part p{
+            text-align: center;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none !important;
+}
+
+.show-mobile-nav{
+    flex-direction: column;
+    align-items: flex-start;
+
+    .nav-options{
+        display: block;
+        padding-top: 2rem;
+        & ul{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .on-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        & i{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
